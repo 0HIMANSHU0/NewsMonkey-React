@@ -22,7 +22,7 @@ export default class App extends Component {
   render() { 
     return (
       <>
-      <BrowserRouter basename="/NewsMonkey-React">
+      {/* <BrowserRouter basename="/NewsMonkey-React"> */}
       <Router>
       <div>
       <Navbar />
@@ -43,7 +43,7 @@ export default class App extends Component {
           <Route path="/technology" element={<News setProgress={this.setProgress} apiKey={this.apiKey} key="technology" pageSize={this.pageSize} country='in' category='technology'/>}></Route>
         </Routes>
       </Router>
-      </BrowserRouter>
+      {/* </BrowserRouter> */}
       </>
     );
   }
