@@ -84,12 +84,12 @@ export class News extends Component {
             Headlines
           </h4>
           {this.state.loading && <Spinner/>}
-          <InfiniteScroll
+          {/* <InfiniteScroll
             dataLength={this.state.articles?.length}
             next={this.fetchMoreData}
-            hasMore={this.state.articles.length !== this.state.totalResults}
+            hasMore={this.state.articles?.length !== this.state.totalResults}
             loader={<Spinner />}
-          >
+          > */}
             <div className="container">
             <div className="row">
               {this.state.articles.map((element) => {
@@ -117,7 +117,7 @@ export class News extends Component {
               })}
             </div>
             </div>
-          </InfiniteScroll>
+          {/* </InfiniteScroll> */}
           {/* <div className="container d-flex justify-content-between">
             <button
               disabled={this.state.page <= 1}
